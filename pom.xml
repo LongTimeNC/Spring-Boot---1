@@ -32,6 +32,18 @@
         </dependency>
     </dependencies>
 
+    <!--上传到私服-->
+    <distributionManagement>
+        <repository>
+            <id>nexus_realease</id>
+            <url>http://192.168.0.127:8081/repository/maven-release</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus_snapshot</id>
+            <url>http://192.168.0.127:8081/repository/maven-snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <build>
         <plugins>
             <plugin>
